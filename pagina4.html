@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas de Verdad - Lógica Computacional</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="encabezado">
+            <h1>Lógica Computacional</h1>
+            <p>Objeto Virtual de Información</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+                <a href="#">Lecturas</a>
+
+                <ul>
+                    <li><a href="pagina1.html">Conceptos fundamentales</a></li>
+                    <li><a href="pagina2.html">Proposiciones</a></li>
+                    <li><a href="pagina3.html">Operadores lógicos</a></li>
+                    <li><a href="pagina4.html">Tablas de verdad</a></li>
+                    <li><a href="pagina5.html">Aplicaciones de la lógica</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Multimedia</a>
+
+                <ul>
+                    <li><a href="video_educativo.html">Video educativo</a></li>
+                    <li><a href="podcast.html">Podcast</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Actividades</a>
+
+                <ul>
+                    <li><a href="actividad1.html">Actividad 1</a></li>
+                    <li><a href="actividad2.html">Actividad 2</a></li>
+                    <li><a href="actividad3.html">Actividad 3</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="autores.html">Autores</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="contenido">
+
+            <h2>Tablas de Verdad</h2>
+
+            <p>
+                Las tablas de verdad son herramientas utilizadas en lógica
+                proposicional para representar todos los posibles valores de
+                verdad de una expresión lógica. Permiten analizar de manera
+                ordenada si una proposición compuesta es verdadera o falsa
+                dependiendo de los valores de sus proposiciones.
+                (Rosen, 2012)
+            </p>
+
+            <h3>¿Qué es una tabla de verdad?</h3>
+
+            <p>
+                Una tabla de verdad organiza las diferentes combinaciones
+                posibles de valores de verdad de una o varias proposiciones.
+                Los valores utilizados son principalmente <strong>V</strong>
+                para verdadero y <strong>F</strong> para falso.
+            </p>
+
+            <p>
+                Cuando una expresión contiene dos proposiciones, existen cuatro
+                combinaciones posibles de valores de verdad. Esto permite
+                analizar completamente una expresión lógica.
+            </p>
+
+            <h3>Tabla de verdad de la negación</h3>
+
+            <p>
+                La negación cambia el valor de verdad de una proposición.
+                Si una proposición es verdadera, su negación es falsa, y
+                viceversa.
+            </p>
+
+            <table>
+                <tr>
+                    <th>p</th>
+                    <th>¬p</th>
+                </tr>
+
+                <tr>
+                    <td>V</td>
+                    <td>F</td>
+                </tr>
+
+                <tr>
+                    <td>F</td>
+                    <td>V</td>
+                </tr>
+            </table>
+
+            <h3>Tabla de verdad de la conjunción</h3>
+
+            <p>
+                La conjunción <strong>p ∧ q</strong> solamente es verdadera
+                cuando las dos proposiciones son verdaderas.
+            </p>
+
+            <table>
+                <tr>
+                    <th>p</th>
+                    <th>q</th>
+                    <th>p ∧ q</th>
+                </tr>
+
+                <tr>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>V</td>
+                </tr>
+
+                <tr>
+                    <td>V</td>
+                    <td>F</td>
+                    <td>F</td>
+                </tr>
+
+                <tr>
+                    <td>F</td>
+                    <td>V</td>
+                    <td>F</td>
+                </tr>
+
+                <tr>
+                    <td>F</td>
+                    <td>F</td>
+                    <td>F</td>
+                </tr>
+            </table>
+
+            <h3>Tabla de verdad de la disyunción</h3>
+
+            <p>
+                La disyunción <strong>p ∨ q</strong> es verdadera cuando
+                al menos una de las proposiciones es verdadera. Solamente
+                es falsa cuando ambas proposiciones son falsas.
+            </p>
+
+            <table>
+                <tr>
+                    <th>p</th>
+                    <th>q</th>
+                    <th>p ∨ q</th>
+                </tr>
+
+                <tr>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>V</td>
+                </tr>
+
+                <tr>
+                    <td>V</td>
+                    <td>F</td>
+                    <td>V</td>
+                </tr>
+
+                <tr>
+                    <td>F</td>
+                    <td>V</td>
+                    <td>V</td>
+                </tr>
+
+                <tr>
+                    <td>F</td>
+                    <td>F</td>
+                    <td>F</td>
+                </tr>
+            </table>
+
+            <h3>Tabla de verdad de la implicación</h3>
+
+            <p>
+                La implicación <strong>p → q</strong> representa una relación
+                de tipo "si p, entonces q". Esta expresión solamente es falsa
+                cuando p es verdadera y q es falsa.
+            </p>
+
+            <table>
+                <tr>
+                    <th>p</th>
+                    <th>q</th>
+                    <th>p → q</th>
+                </tr>
+
+                <tr>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>V</td>
+                </tr>
+
+                <tr>
+                    <td>V</td>
+                    <td>F</td>
+                    <td>F</td>
+                </tr>
+
+                <tr>
+                    <td>F</td>
+                    <td>V</td>
+                    <td>V</td>
+                </tr>
+
+                <tr>
+                    <td>F</td>
+                    <td>F</td>
+                    <td>V</td>
+                </tr>
+            </table>
+
+            <h3>Tabla de verdad del bicondicional</h3>
+
+            <p>
+                El bicondicional <strong>p ↔ q</strong> es verdadero cuando
+                las dos proposiciones tienen el mismo valor de verdad.
+            </p>
+
+            <table>
+                <tr>
+                    <th>p</th>
+                    <th>q</th>
+                    <th>p ↔ q</th>
+                </tr>
+
+                <tr>
+                    <td>V</td>
+                    <td>V</td>
+                    <td>V</td>
+                </tr>
+
+                <tr>
+                    <td>V</td>
+                    <td>F</td>
+                    <td>F</td>
+                </tr>
+
+                <tr>
+                    <td>F</td>
+                    <td>V</td>
+                    <td>F</td>
+                </tr>
+
+                <tr>
+                    <td>F</td>
+                    <td>F</td>
+                    <td>V</td>
+                </tr>
+            </table>
+
+            <h3>Importancia de las tablas de verdad</h3>
+
+            <p>
+                Las tablas de verdad permiten comprobar el comportamiento
+                lógico de una expresión y determinar todas las situaciones
+                posibles. Por esta razón, son una herramienta importante para
+                el estudio de la lógica computacional y para el análisis de
+                condiciones utilizadas en diferentes procesos informáticos.
+            </p>
+
+            <h3>Ejemplo aplicado</h3>
+
+            <p>
+                Supongamos que un sistema permite realizar una operación
+                únicamente cuando dos condiciones se cumplen al mismo tiempo.
+                Si <strong>p</strong> representa que el usuario está autenticado
+                y <strong>q</strong> representa que tiene permisos, la expresión
+                <strong>p ∧ q</strong> permitirá analizar cuándo se cumplen
+                ambas condiciones.
+            </p>
+
+            <p>
+                De esta manera, las tablas de verdad ayudan a representar
+                visualmente las condiciones que debe cumplir un sistema para
+                producir un determinado resultado.
+            </p>
+
+            <h3>Conclusión</h3>
+
+            <p>
+                Las tablas de verdad permiten representar y analizar
+                sistemáticamente las diferentes combinaciones de valores de
+                verdad de una expresión lógica. Su utilización facilita la
+                comprensión de los operadores lógicos y sirve como base para
+                analizar expresiones utilizadas en la lógica computacional.
+            </p>
+
+            <h3>Referencia bibliográfica</h3>
+
+            <p>
+                Rosen, K. H. (2012).
+                <i>Discrete mathematics and its applications</i>
+                (7th ed.). McGraw-Hill.
+            </p>
+
+        </section>
+
+        <aside>
+
+            <h3>Sobre este OVI</h3>
+
+            <p>
+                Este sitio web presenta contenidos educativos relacionados
+                con la lógica computacional y está diseñado para facilitar
+                el aprendizaje mediante lecturas, recursos multimedia y
+                actividades.
+            </p>
+
+            <h3>Contenido</h3>
+
+            <ul>
+                <li>Lecturas educativas</li>
+                <li>Recursos multimedia</li>
+                <li>Actividades de aprendizaje</li>
+                <li>Información de los autores</li>
+            </ul>
+
+        </aside>
+
+    </main>
+
+    <footer>
+
+        <p>OVI - Lógica Computacional</p>
+        <p>Ingeniería de Sistemas</p>
+        <p>Todos los derechos reservados</p>
+
+    </footer>
+
+</body>
+
+</html>
